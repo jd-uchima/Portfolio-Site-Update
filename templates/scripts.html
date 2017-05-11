@@ -1,0 +1,20 @@
+{% block scripts %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{% static '/js/main.js' %}"></script>
+<script type="text/javascript">
+  $(function() {
+    // Get page title
+      var pageTitle = $("title").text();
+
+    // Change page title on blur
+    $(window).blur(function() {
+      $("title").text("Hey! Let's talk...");
+    });
+
+    // Change page title back on focus
+    $(window).focus(function() {
+      $("title").text(pageTitle);
+    });
+  });
+</script>
+{% endblock scripts%}

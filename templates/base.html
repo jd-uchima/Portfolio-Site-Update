@@ -1,0 +1,48 @@
+<!--
+   _     _            _     _
+  (_) __| |_   _  ___| |__ (_)_ __ ___   __ _   ___ ___  _ __ ___
+  | |/ _` | | | |/ __| '_ \| | '_ ` _ \ / _` | / __/ _ \| '_ ` _ \
+  | | (_| | |_| | (__| | | | | | | | | | (_| || (_| (_) | | | | | |
+ _/ |\__,_|\__,_|\___|_| |_|_|_| |_| |_|\__,_(_)___\___/|_| |_| |_|
+|__/
+
+-->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="keywords" content="jd uchima, j.d. uchima, portfolio, atlanta, UI, user interface, ui designer, user interface designer, visual designer, georgia, ga, graphic design, designer, art director, motion graphics, freelance, webdesign, web design, web designer" />
+  <meta name="description" content="Jd Uchima is an Atlanta based UX desginer and pixel pusher who enjoys clean UIs, sketching, skateboarding and rockclimbing." />
+
+  <meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+
+  <title>JD Uchima | UX Designer</title>
+
+  <link rel="stylesheet" href="{% static 'css/jd.scss.css' %}" />
+  <link rel="shortcut icon" href="{% static 'images/icon.ico' %}" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="wrapper">
+      <a class="logo" href="#"><img class="uchimabot" src="{% static 'images/uchima-bot.png' %}" /><span>Jd Uchima</span></a>
+
+      <ul class="main-nav">
+        <a href="#">Work</a>
+        <a href="#">About + Contact</a>
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+	{% block content %}
+		Main content
+	{% endblock content %}
+
+{% include "footer.html" %}
+{% include "scripts.html" %}
+</body>
+</html>

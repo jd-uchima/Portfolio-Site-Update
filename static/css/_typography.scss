@@ -1,0 +1,55 @@
+// _typography
+body {
+	color: $dark-grey;
+}
+
+h1 {
+	font-size: 46px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 400;
+	margin: 5px 10px 50px 10px;
+	color: rgba(49,49,49,.5);
+}
+
+h3 {
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $slate-grey;
+	opacity: 0.4;
+	margin-bottom: 10px;
+}
+
+h3.sub-title {
+	color: #fff;
+	font-weight: 400;
+}
+
+a {
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0px 10px;
+}
+
+.intro-blurb {
+	font-size: 18px;
+}
+
+p.body-copy {
+	line-height: 26px;
+}
+
+footer p {
+	font-weight: 300;
+	font-size: 13px;
+	opacity: 0.5;
+}
+
+.legal {
+	float: right;
+}
