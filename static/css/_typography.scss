@@ -7,6 +7,7 @@ h1 {
 	font-size: 46px;
 	font-weight: 700;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 
 h2 {
@@ -14,6 +15,15 @@ h2 {
 	font-weight: 400;
 	margin: 5px 10px 50px 10px;
 	color: rgba(49,49,49,.5);
+}
+
+h2.tease-title {
+	font-size: 24px;
+	color: #fff;
+	opacity: 0.8;
+	font-weight: 700;
+	margin: 0px 0px 10px 0px;
+	display: inline-block;
 }
 
 h3 {
@@ -30,6 +40,14 @@ h3.sub-title {
 	font-weight: 400;
 }
 
+h3.sub-title-tease {
+	color: #fff;
+	font-weight: 600;
+	display: inline-block;
+	opacity: 0.7;
+	vertical-align: middle;
+}
+
 a {
 	font-size: 14px;
 	font-weight: 400;
@@ -38,10 +56,15 @@ a {
 
 .intro-blurb {
 	font-size: 18px;
+	opacity: 0.5;
 }
 
 p.body-copy {
 	line-height: 26px;
+}
+
+.tease-block p {
+	color: #fff;
 }
 
 footer {

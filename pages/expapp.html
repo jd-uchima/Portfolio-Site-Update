@@ -6,6 +6,41 @@
 
 {% block blurb %}Brief copy intro about the project or company.{% endblock blurb %}
 
-{% block overview %}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis consequat nibh a efficitur. Suspendisse lobortis ornare purus a congue. Sed eget erat condimentum velit posuere molestie eu ut felis. Duis ultrices et diam eu efficitur. Phasellus a facilisis nulla, pulvinar egestas velit.{% endblock overview %}
+{% block overview %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis consequat nibh a efficitur. Suspendisse lobortis ornare purus a congue. Sed eget erat condimentum velit posuere molestie eu ut felis. Duis ultrices et diam eu efficitur. Phasellus a facilisis nulla, pulvinar egestas velit.
+{% endblock overview %}
 
 {% block myrole %}I did this, that, and this other thing.{% endblock myrole %}
+
+  {% block hero-image %}
+  <img class="spread" src="{% static 'images/hero-expapp.png' %}" />
+  {% endblock hero-image %}
+
+{% block the-challenge %}
+Very challenge. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis consequat nibh a efficitur. Suspendisse lobortis ornare purus a congue. Sed eget erat condimentum velit posuere molestie eu ut felis. Duis ultrices et diam eu efficitur. Phasellus a facilisis nulla, pulvinar egestas velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis consequat nibh a efficitur. Suspendisse lobortis ornare purus a congue. Sed eget erat condimentum velit posuere molestie eu ut felis. Duis ultrices et diam eu efficitur. Phasellus a facilisis nulla, pulvinar egestas velit.
+{% endblock the-challenge %}
+
+{% block the-approach %}
+Much approach. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis consequat nibh a efficitur. Suspendisse lobortis ornare purus a congue. Sed eget erat condimentum velit posuere molestie eu ut felis. Duis ultrices et diam eu efficitur. Phasellus a facilisis nulla, pulvinar egestas velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis consequat nibh a efficitur. Suspendisse lobortis ornare purus a congue. Sed eget erat condimentum velit posuere molestie eu ut felis. Duis ultrices et diam eu efficitur. Phasellus a facilisis nulla, pulvinar egestas velit.
+{% endblock the-approach %}
+
+  {% block work-images %}
+
+    <figure>
+      <img class="spread" src="{% static 'images/placeholder.png' %}" />
+    </figure>
+
+    <figure>
+      <img class="double left" src="{% static 'images/placeholder.png' %}" />
+      <img class="double right" src="{% static 'images/placeholder.png' %}" />
+    </figure>
+
+  {% endblock work-images %}
+
+{% block the-solution %}
+Oh hai solution. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis consequat nibh a efficitur. Suspendisse lobortis ornare purus a congue. Sed eget erat condimentum velit posuere molestie eu ut felis. Duis ultrices et diam eu efficitur. Phasellus a facilisis nulla, pulvinar egestas velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis consequat nibh a efficitur. Suspendisse lobortis ornare purus a congue. Sed eget erat condimentum velit posuere molestie eu ut felis. Duis ultrices et diam eu efficitur. Phasellus a facilisis nulla, pulvinar egestas velit.
+{% endblock the-solution %}
+
+{% block final-image %}
+<img class="spread" src="{% static 'images/placeholder.png' %}" />
+{% endblock final-image %}
