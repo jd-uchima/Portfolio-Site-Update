@@ -51,22 +51,24 @@
     </div><!--End wrapper-->
   </section>
 
+  {% block additional-content %}{% endblock additional-content %}
+
   <section class="full-width">
     <div class="wrapper">
       <div class="copy-block">
         <h3>The Solution</h3>
         <p class="body-copy">{% block the-solution %}{% endblock the-solution %}</p>
       </div>
-
-      <figure>
-        {% block final-image %}{% endblock final-image %}
-      </figure>
-
     </div><!--End wrapper-->
+
+    <figure>
+      {% block final-image %}{% endblock final-image %}
+    </figure>
+
   </section>
 
   <section class="full-width">
-    <a href="#" class="next-project">Next Project Name ></a>
+      {% block next-project %}{% endblock next-project%}
   </section>
 
 </section><!--End case study-->

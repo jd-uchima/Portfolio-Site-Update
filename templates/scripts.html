@@ -1,6 +1,32 @@
 {% block scripts %}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <script src="{% static '/js/main.js' %}"></script>
+
+<script type="text/javascript">
+// Set the Access Token
+var accessToken = "6521455bf5fb9e596d5f991a2f9fc8170c52b6df9201a3f981d3087ac251e7ea"
+
+// Call Dribble v2 API
+$.ajax({
+    url: 'https://api.dribbble.com/v2/user/shots?per_page=15&access_token='+accessToken,
+    dataType: 'json',
+    type: 'GET',
+    success: function(data) {
+      if (data.length > 0) {
+        $.each(data.reverse(), function(i, val) {
+          $('#dribbbleShots').prepend(
+            '<a target="_blank" href="'+ val.html_url +'"><li class="shot" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="'+ val.images.hidpi +'"/></li></a>'
+            )
+        })
+      }
+      else {
+        $('#dribbbleShots').append('<p>Sorry, No shots yet</p>');
+      }
+    }
+});
+</script>
+
 <script type="text/javascript">
   $(function() {
     // Get page title
