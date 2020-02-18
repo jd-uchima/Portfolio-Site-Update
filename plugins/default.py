@@ -27,7 +27,7 @@ def preBuild(site):
     pass
 
     # For scss/sass you need to install sassc: brew install sassc
-    run('find %s -name "*.scss" -not -name "_*" -exec bash -c "sassc \'{}\' > \'{}.css\'" \;' % pipes.quote(site.static_path))
+    run('find %s -name "*.scss" -not -name "_*" -exec bash -c "sass \'{}\' > \'{}.css\'" \;' % pipes.quote(site.static_path))
 
     # For coffee script you need to install coffee script: npm install -g coffee-script
     # run('find %s -name "*.coffee" -exec coffee -c {} \;' % pipes.quote(site.static_path))

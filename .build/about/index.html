@@ -1,0 +1,146 @@
+<!--
+   _     _            _     _
+  (_) __| |_   _  ___| |__ (_)_ __ ___   __ _   ___ ___  _ __ ___
+  | |/ _` | | | |/ __| '_ \| | '_ ` _ \ / _` | / __/ _ \| '_ ` _ \
+  | | (_| | |_| | (__| | | | | | | | | | (_| || (_| (_) | | | | | |
+ _/ |\__,_|\__,_|\___|_| |_|_|_| |_| |_|\__,_(_)___\___/|_| |_| |_|
+|__/
+
+-->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="keywords" content="jd uchima, j.d. uchima, portfolio, atlanta, UI, user interface, ui designer, user interface designer, visual designer, georgia, ga, graphic design, designer, art director, motion graphics, freelance, webdesign, web design, web designer" />
+  <meta name="description" content="Jd Uchima is an Atlanta based UX desginer and pixel pusher who enjoys clean UIs, sketching, skateboarding and rockclimbing." />
+
+  <meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+
+  <title>JD Uchima |  It's a me </title>
+
+  <link rel="stylesheet" href="/static/css/jd.scss.css" />
+  <link rel="shortcut icon" href="/static/images/icon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="wrapper">
+      <a class="logo" href="/"><img class="uchimabot 2x" src="/static/images/uchima-bot.png" /><span>Jd Uchima</span></a>
+
+      <ul class="main-nav">
+        <a href="/">Work</a>
+        <a href="/about">About</a>
+        <a href="mailto:hello@jduchima.com">Contact</a>
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+	
+
+<section class="full-width grey me">
+
+  <div class="wrapper">
+
+    <div class="itsme left">
+      <figure>
+        <img class="headshot" src="/static/images/itsme.png" />
+      </figure>
+    </div>
+
+    <div class="right my-bio">
+      <h1>Hey, I'm JD</h1>
+      <p class="intro-blurb">
+        A multidisciplinary designer in Atlanta, GA. I love solving complex user problems in ways that make you say "of course!". I've worked on both consumer and enterprise-level products, with screen sizes ranging from the very large to those that fit on your wrist. I'm equally comfortable with pen/paper, flow/story mapping, designing in Sketch, prototyping, or heads down in HTML/CSS.
+        <br/>
+        <br/>
+        I'm currently a UX team lead at <strong>CareerBuilder</strong>.
+      </p>
+
+      <a href="/static/images/JdUchima_resume.pdf" class="next-project resume" target="_blank">Download Resume</a>
+    </div>
+
+  </div><!--end wrapper-->
+
+</section>
+
+
+
+
+
+<footer>
+  <div class="wrapper">
+
+    <div class="left">
+      <a href="https://dribbble.com/jduchima">Dribbble</a>
+      <span>|</span>
+      <a href="https://twitter.com/jduchima">Twitter</a>
+      <span>|</span>
+      <a href="https://www.instagram.com/jduchima/">Instagram</a>
+      <span>|</span>
+      <a href="https://www.linkedin.com/in/jduchima/">LinkedIn</a>
+      <span>|</span>
+      <a href="mailto:hello@jduchima.com">Hello@jduchima.com</a>
+    </div>
+
+    <div class="right">
+      <p class="legal">Copyright (c) Jd Uchima</p>
+    </div>
+
+  </div><!--End wrapper-->
+</footer>
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="/static/js/main.js"></script>
+
+<script type="text/javascript">
+// Set the Access Token
+var accessToken = "6521455bf5fb9e596d5f991a2f9fc8170c52b6df9201a3f981d3087ac251e7ea"
+
+// Call Dribble v2 API
+$.ajax({
+    url: 'https://api.dribbble.com/v2/user/shots?per_page=15&access_token='+accessToken,
+    dataType: 'json',
+    type: 'GET',
+    success: function(data) {
+      if (data.length > 0) {
+        $.each(data.reverse(), function(i, val) {
+          $('#dribbbleShots').prepend(
+            '<a target="_blank" href="'+ val.html_url +'"><li class="shot" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="'+ val.images.hidpi +'"/></li></a>'
+            )
+        })
+      }
+      else {
+        $('#dribbbleShots').append('<p>Sorry, No shots yet</p>');
+      }
+    }
+});
+</script>
+
+<script type="text/javascript">
+  $(function() {
+    // Get page title
+      var pageTitle = $("title").text();
+
+    // Change page title on blur
+    $(window).blur(function() {
+      $("title").text("Hey! Let's talk...");
+    });
+
+    // Change page title back on focus
+    $(window).focus(function() {
+      $("title").text(pageTitle);
+    });
+  });
+</script>
+
+
+</body>
+</html>

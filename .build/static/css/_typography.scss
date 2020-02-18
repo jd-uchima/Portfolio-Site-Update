@@ -7,6 +7,13 @@ h1 {
 	font-size: 46px;
 	font-weight: 700;
 	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+h1.main {
+	font-size: 70px;
+	text-transform: none;
+	color: #fff;
 }
 
 h2 {
@@ -14,6 +21,34 @@ h2 {
 	font-weight: 400;
 	margin: 5px 10px 50px 10px;
 	color: rgba(49,49,49,.5);
+}
+
+h2.tease-title {
+	font-size: 40px;
+	color: #fff;
+	opacity: 0.9;
+	font-weight: 700;
+	margin: 0px;
+	display: inline-block;
+
+	&::after {
+		content: '';
+		background-color: #ffffff;
+		display: block;
+		height: 2px;
+		margin: 0.325em 0 0.5em 0;
+		width: 100%;
+	}
+
+}
+
+h2.dribs {
+	font-size: 24px;
+	opacity: 0.9;
+	font-weight: 400;
+	margin: 0px 0px 20px 0px;
+	padding-top: 20px;
+	text-align: center;
 }
 
 h3 {
@@ -30,24 +65,72 @@ h3.sub-title {
 	font-weight: 400;
 }
 
+h3.sub-title-tease {
+	color: #fff;
+	font-weight: 600;
+	display: inline-block;
+	opacity: 0.7;
+	vertical-align: middle;
+	margin-bottom: 6px;
+}
+
 a {
 	font-size: 14px;
 	font-weight: 400;
 	margin: 0px 10px;
 }
 
-.intro-blurb {
+p.intro-blurb {
 	font-size: 18px;
+	opacity: 0.5;
+}
+
+p.home {
+	color: #fff;
 }
 
 p.body-copy {
 	line-height: 26px;
 }
 
-footer p {
-	font-weight: 300;
-	font-size: 13px;
-	opacity: 0.5;
+ul.case-study-list {
+	list-style: disc;
+	margin-left: 40px;
+	margin-top: 20px;
+
+		li {
+			line-height: 26px;
+			margin-bottom: 5px;
+		}
+}
+
+a.cs-link {
+	font-weight: 600;
+	color: $dark-grey;
+	font-size: 16px;
+	margin: 0px;
+}
+
+.col-3 p {
+	margin-top: 25%;
+}
+
+.tease-block p {
+	color: #fff;
+}
+
+footer {
+	p {
+		font-weight: 300;
+		font-size: 13px;
+		opacity: 0.5;
+	}
+
+	a {
+		font-weight: 300;
+		color: #fff;
+		opacity: 0.5;
+	}
 }
 
 .legal {

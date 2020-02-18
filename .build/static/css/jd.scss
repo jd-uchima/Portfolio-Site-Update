@@ -3,27 +3,118 @@
 @import "typography";
 @import "nav";
 @import "images";
+@import "mediaqueries";
 
 /*------------------------------
  GLOBAL STYLES
 ------------------------------*/
+body {
+	position: relative;
+	padding-bottom: 120px;
+}
+
 .wrapper {
 	margin: 0px auto;
-	width: 75%;
+	width: 90%;
 	max-width: 1200px;
 }
 
 section {
 	overflow: auto;
 }
+section.dribbble {
+	padding: 60px 0px;
+}
 
-.full-width {
+.full-width, .welcome {
 	width: 100%;
 	padding: 60px 0px;
 }
 
+.welcome {
+	height: 75vh;
+	overflow: hidden;
+	position: relative;
+	padding: 0px 0px;
+	background-color: $uchima-blue;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	display: flex;
+	background-image: url("../images/nfhs/nfhs-sketches1.png");
+	background-position: center 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+		&:after {
+			content: '';
+			background-color: #242943;
+			-moz-transition: opacity 2.5s ease;
+			-webkit-transition: opacity 2.5s ease;
+			-ms-transition: opacity 2.5s ease;
+			transition: opacity 2.5s ease;
+			-moz-transition-delay: 0.75s;
+			-webkit-transition-delay: 0.75s;
+			-ms-transition-delay: 0.75s;
+			transition-delay: 0.75s;
+			pointer-events: none;
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.85;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+}
+
+.handshake {
+	padding: 0px 20px;
+	position: relative;
+	z-index: 2;
+}
+
 .grey {
 	background-color: #F4F6F7;
+}
+
+.hero {
+	max-height: 400px;
+	overflow: hidden;
+	position: relative;
+	padding: 0px 0px;
+}
+
+.space-me {
+	margin-top: 60px;
+}
+/*
+.tease-block {
+	padding: 40px;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	width: 45%;
+	margin: 0px auto;
+	text-align: center;
+	border: 1px solid rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,0.10);
+
+		&:hover {
+			background-color: rgba(0,0,0,0.6);
+		}
+}*/
+
+// Home flex tiles
+
+@import "tiles";
+
+// Other pages
+.me {
+	min-height: 75vh;
 }
 
 .case-study {
@@ -32,7 +123,7 @@ section {
 }
 
 .intro {
-	width: 50%;
+	width: 100%;
 	margin: 0px auto;
 }
 
@@ -48,21 +139,38 @@ section {
 }
 
 .left {
-	padding-right: 20px;
+	margin-right: 20px;
 	float: left;
 }
 
+.col-3 {
+	width: 23%;
+	float: left;
+	margin: 0px 5px 20px 5px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.grid {
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	overflow: auto;
+}
+
 .right {
-	padding-left: 20px;
+	margin-left: 20px;
 	float: right;
 }
 
 .my-role {
-	width: 25%;
+	width: 30%;
 }
 
 .overview {
-	width: 70%;
+	width: 60%;
 }
 
 .copy-block {
@@ -71,11 +179,41 @@ section {
 	margin-bottom: 40px;
 }
 
+.my-bio {
+	margin-top: 10%;
+}
+
+.next-project {
+	text-align: center;
+	font-size: 13px;
+	padding: 18px 50px;
+	color: white;
+	display: block;
+	margin: 0px auto;
+	background-color: $uchima-green;
+	max-width: 250px;
+	border-radius: 25px;
+
+		&:hover {
+			text-decoration: none;
+			background-color: $uchima-green-hover;
+		}
+}
+
+.resume {
+	margin: 0px;
+	margin-top: 20px;
+}
+
 footer {
 	background-color: $dark-grey;
 	color: #fff;
 	padding: 50px 0px;
 	overflow: auto;
+	position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
 		span {
 			opacity: 0.25;
