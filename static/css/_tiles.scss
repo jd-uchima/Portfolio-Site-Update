@@ -108,19 +108,28 @@
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
+        background: -moz-linear-gradient(-45deg, #009ACD 0%, #00CED1 100%);
+        background: -webkit-linear-gradient(-45deg, #009ACD 0%, #00CED1 100%);
+        background: linear-gradient(135deg, #009ACD 0%, #00CED1 100%);
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #8d82c4;
+        background: -moz-linear-gradient(-45deg, #963484 0%, #966888 100%);
+        background: -webkit-linear-gradient(-45deg, #963484 0%, #966888 100%);
+        background: linear-gradient(135deg, #963484 0%, #966888 100%);
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+        background: -moz-linear-gradient(-45deg, #E84855 0%, #E87C59 100%);
+        background: -webkit-linear-gradient(-45deg, #E84855 0%, #E87C59 100%);
+        background: linear-gradient(135deg, #E84855 0%, #E87C59 100%);
 			}
 
 			.tiles article:nth-child(6n - 2):before {
 				background-color: #e7b788;
+        background: -moz-linear-gradient(-45deg, #ffa144 0%, #e7b788 100%);
+        background: -webkit-linear-gradient(-45deg, #ffa144 0%, #e7b788 100%);
+        background: linear-gradient(135deg, #ffa144 0%, #e7b788 100%);
 			}
 
 			.tiles article:nth-child(6n - 1):before {
