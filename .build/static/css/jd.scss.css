@@ -20,7 +20,7 @@ fieldset, form, label {
 body {
   text-rendering: optimizeLegibility;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   background-color: #fff; }
 
 ol, ul {
@@ -100,7 +100,6 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   color: #121212;
-  opacity: 0.4;
   margin-bottom: 10px; }
 
 h3.sub-title {
@@ -116,7 +115,7 @@ h3.sub-title-tease {
   margin-bottom: 6px; }
 
 a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   margin: 0px 10px; }
 
@@ -124,14 +123,13 @@ p.intro-blurb {
   font-size: 20px;
   line-height: 1.5em;
   letter-spacing: 0em;
-  text-rendering: optimizeLegibility;
-  opacity: 0.5; }
+  text-rendering: optimizeLegibility; }
 
 p.home {
   color: #fff; }
 
 p.body-copy {
-  line-height: 1.5em; }
+  line-height: 1.6em; }
 
 ul.case-study-list {
   list-style: disc;
@@ -144,7 +142,7 @@ ul.case-study-list {
 a.cs-link {
   font-weight: 600;
   color: #191919;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0px; }
 
 .col-3 p {
@@ -194,7 +192,7 @@ a.logo {
     float: left; }
 
 a.logo span, ul.main-nav {
-  padding: 20px 0px; }
+  padding: 18px 0px; }
 
 ul.main-nav {
   float: right; }
