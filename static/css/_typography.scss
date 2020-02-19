@@ -1,6 +1,6 @@
 // _typography
 body {
-	color: $dark-grey;
+	color: $slate-grey;
 }
 
 h1 {
@@ -52,7 +52,7 @@ h2.dribs {
 }
 
 h3 {
-	font-size: 13px;
+	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: $slate-grey;
@@ -81,7 +81,10 @@ a {
 }
 
 p.intro-blurb {
-	font-size: 18px;
+	font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: 0em;
+  text-rendering: optimizeLegibility;
 	opacity: 0.5;
 }
 
@@ -90,7 +93,7 @@ p.home {
 }
 
 p.body-copy {
-	line-height: 26px;
+	line-height: 1.5em;
 }
 
 ul.case-study-list {

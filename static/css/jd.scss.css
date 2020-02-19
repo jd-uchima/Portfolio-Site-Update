@@ -14,13 +14,12 @@ fieldset, form, label {
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
   background: transparent; }
 
 body {
   text-rendering: optimizeLegibility;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   background-color: #fff; }
 
@@ -54,7 +53,7 @@ a:hover {
   color: #fff; }
 
 body {
-  color: #191919; }
+  color: #121212; }
 
 h1 {
   font-size: 46px;
@@ -97,10 +96,10 @@ h2.dribs {
   text-align: center; }
 
 h3 {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #313131;
+  color: #121212;
   opacity: 0.4;
   margin-bottom: 10px; }
 
@@ -122,14 +121,17 @@ a {
   margin: 0px 10px; }
 
 p.intro-blurb {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: 0em;
+  text-rendering: optimizeLegibility;
   opacity: 0.5; }
 
 p.home {
   color: #fff; }
 
 p.body-copy {
-  line-height: 26px; }
+  line-height: 1.5em; }
 
 ul.case-study-list {
   list-style: disc;
@@ -210,7 +212,7 @@ figure {
   display: block;
   width: 100%;
   text-align: center;
-  color: #313131;
+  color: #121212;
   opacity: 0.5;
   margin: 0px 10px; }
 
@@ -253,6 +255,32 @@ ul.shots img, .attachments img {
 .casestudy-cover {
   width: 100%;
   margin-top: -250px; }
+
+#dribbbleShots li, .attachments li {
+  float: left;
+  width: 20%;
+  border: 2px solid #FFF;
+  box-sizing: border-box; }
+
+#dribbbleShots li {
+  background-color: #191919; }
+
+#dribbbleShots li a:hover {
+  opacity: 0.5; }
+
+ul#dribbbleShots {
+  width: 100%; }
+
+ul#dribbbleShots a {
+  display: block;
+  margin: 0px; }
+
+ul#dribbbleShots img, .attachments img {
+  display: block;
+  width: 100%; }
+
+#dribbbleShots .title {
+  display: none; }
 
 @media (max-width: 950px) {
   a.logo span {
@@ -530,6 +558,12 @@ section.dribbble {
 
 .nfhs {
   background-image: url("../images/casestudy-hero-nfhs.png"); }
+
+.useriq {
+  background-image: url("../images/casestudy-hero-useriq.png"); }
+
+.eventmanager {
+  background-image: url("../images/casestudy-hero-eventmanager.png"); }
 
 .me {
   min-height: 75vh; }
