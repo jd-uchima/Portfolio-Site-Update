@@ -1,0 +1,201 @@
+<!--
+   _     _            _     _
+  (_) __| |_   _  ___| |__ (_)_ __ ___   __ _   ___ ___  _ __ ___
+  | |/ _` | | | |/ __| '_ \| | '_ ` _ \ / _` | / __/ _ \| '_ ` _ \
+  | | (_| | |_| | (__| | | | | | | | | | (_| || (_| (_) | | | | | |
+ _/ |\__,_|\__,_|\___|_| |_|_|_| |_| |_|\__,_(_)___\___/|_| |_| |_|
+|__/
+
+-->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="keywords" content="jd uchima, j.d. uchima, portfolio, atlanta, UI, user interface, ui designer, user interface designer, visual designer, georgia, ga, graphic design, designer, art director, motion graphics, freelance, webdesign, web design, web designer" />
+  <meta name="description" content="Jd Uchima is an Atlanta based UX desginer and pixel pusher who enjoys clean UIs, sketching, skateboarding and rockclimbing." />
+
+  <meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+
+  <title>JD Uchima |  UX Designer </title>
+
+  <link rel="stylesheet" href="/static/css/jd.scss.css" />
+  <link rel="shortcut icon" href="/static/images/icon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="wrapper">
+      <a class="logo" href="/"><img class="uchimabot 2x" src="/static/images/uchima-bot.png" /><span>Jd Uchima</span></a>
+
+      <ul class="main-nav">
+        <a href="/">Work</a>
+        <a href="/about">About</a>
+        <a href="mailto:hello@jduchima.com">Contact</a>
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+	
+
+<section class="welcome full-width space-me">
+  <div class="wrapper">
+
+    <div class="handshake">
+      <h1 class="main">Hey, I'm JD</h1>
+      <p class="intro-blurb home">
+        A multi-disciplinary UX &amp; Design leader with more than 10 years of experience leading teams and building digital products.
+      </p>
+
+  </div>
+</section>
+
+<section id="one" class="tiles">
+
+  <article class="useriq">
+    <div class="tease-block">
+      <h2 class="tease-title">UserIQ Behavioral Archetypes</h2>
+      <p class="body-copy">User research</p>
+    </div>
+    <a href="/personas" class="link primary"></a>
+  </article>
+
+  <article class="expapp">
+    <div class="tease-block">
+      <h2 class="tease-title">ExpApp Redesign</h2>
+      <p class="body-copy">Mobile ticketing &amp; commerce platform</p>
+    </div>
+    <a href="/expapp" class="link primary"></a>
+  </article>
+
+  <article class="nfhs">
+    <div class="tease-block">
+      <h2 class="tease-title">The NFHS Network</h2>
+      <p class="body-copy">Re-imagining how fans watch high school sports</p>
+    </div>
+    <a href="/nfhs" class="link primary"></a>
+  </article>
+
+  <article class="eventmanager">
+    <div class="tease-block">
+      <h2 class="tease-title">NFHS Manager</h2>
+      <p class="body-copy">Video Management & Production Console</p>
+    </div>
+    <a href="/eventmanager" class="link primary"></a>
+  </article>
+
+
+</section>
+
+<!--End case studies-->
+
+<section class="full-width grey">
+  <div class="wrapper">
+    <h2 class="dribs">Additional Projects</h2>
+    <ul class="grid">
+      <li class="col-3">
+        <a href="#"><img class="home-image" src="/static/images/showcase-sageone.png" /></a>
+        <span>(Available on request)</span>
+      </li>
+      <li class="col-3">
+        <a href="#"><img class="home-image" src="/static/images/showcase-expapp.png" /></a>
+        <span>(Available on request)</span>
+      </li>
+      <li class="col-3">
+        <a href="#"><img class="home-image" src="/static/images/showcase-nfhs.png" /></a>
+        <span>(Available on request)</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="dribbble">
+  <div class="wrapper">
+    <h2 class="dribs">Want to see more? Checkout my Dribbble shots.</h2>
+    <ul id="dribbbleShots"></ul>
+  </div>
+</section>
+
+<section class="full-width">
+</section>
+
+
+
+
+
+<footer>
+  <div class="wrapper">
+
+    <div class="left">
+      <a href="https://dribbble.com/jduchima">Dribbble</a>
+      <span>|</span>
+      <a href="https://twitter.com/jduchima">Twitter</a>
+      <span>|</span>
+      <a href="https://www.instagram.com/jduchima/">Instagram</a>
+      <span>|</span>
+      <a href="https://www.linkedin.com/in/jduchima/">LinkedIn</a>
+      <span>|</span>
+      <a href="mailto:hello@jduchima.com">Hello@jduchima.com</a>
+    </div>
+
+    <div class="right">
+      <p class="legal">Copyright (c) Jd Uchima</p>
+    </div>
+
+  </div><!--End wrapper-->
+</footer>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="/static/js/main.js"></script>
+
+<script type="text/javascript">
+// Set the Access Token
+var accessToken = "6521455bf5fb9e596d5f991a2f9fc8170c52b6df9201a3f981d3087ac251e7ea"
+
+// Call Dribble v2 API
+$.ajax({
+    url: 'https://api.dribbble.com/v2/user/shots?per_page=15&access_token='+accessToken,
+    dataType: 'json',
+    type: 'GET',
+    success: function(data) {
+      if (data.length > 0) {
+        $.each(data.reverse(), function(i, val) {
+          $('#dribbbleShots').prepend(
+            '<a target="_blank" href="'+ val.html_url +'"><li class="shot" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="'+ val.images.hidpi +'"/></li></a>'
+            )
+        })
+      }
+      else {
+        $('#dribbbleShots').append('<p>Sorry, No shots yet</p>');
+      }
+    }
+});
+</script>
+
+<script type="text/javascript">
+  $(function() {
+    // Get page title
+      var pageTitle = $("title").text();
+
+    // Change page title on blur
+    $(window).blur(function() {
+      $("title").text("Hey! Let's talk...");
+    });
+
+    // Change page title back on focus
+    $(window).focus(function() {
+      $("title").text(pageTitle);
+    });
+  });
+</script>
+
+
+</body>
+</html>

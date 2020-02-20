@@ -1,0 +1,100 @@
+// _images
+
+figure {
+  margin: 20px 0px;
+  display: inline-block;
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+.grid span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: $slate-grey;
+  opacity: 0.5;
+  margin: 0px 10px;
+}
+
+.grid li a:hover {
+  opacity: 0.75;
+}
+
+.shots li, .attachments li {
+  float: left;
+  width: 20%;
+}
+
+.shots li {
+  background-color: $dark-grey;
+}
+
+.shots li a:hover {
+  opacity: 0.5;
+}
+
+ul.shots {
+  width: 100%;
+
+  a {
+  display: block;
+  margin: 0px;
+  }
+
+}
+
+ul.shots img, .attachments img {
+  display: block;
+  width: 100%;
+}
+
+.spread {
+  width: 100%;
+  height: auto;
+}
+
+.double {
+  width: 48%;
+  margin: 0px auto;
+}
+
+.headshot {
+  border-radius: 1000px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.casestudy-cover {
+  width: 100%;
+  margin-top: -250px;
+}
+
+#dribbbleShots li, .attachments li {
+  float: left;
+  width: 20%;
+  border: 2px solid #FFF;
+  box-sizing: border-box; }
+
+#dribbbleShots li {
+  background-color: #191919; }
+
+#dribbbleShots li a:hover {
+  opacity: 0.5; }
+
+ul#dribbbleShots {
+  width: 100%; }
+  ul#dribbbleShots a {
+    display: block;
+    margin: 0px; }
+
+ul#dribbbleShots img, .attachments img {
+  display: block;
+  width: 100%; }
+
+#dribbbleShots .title {
+  display: none;
+}

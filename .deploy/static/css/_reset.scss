@@ -1,0 +1,63 @@
+// _reset
+
+/*   _     _            _     _
+  (_) __| |_   _  ___| |__ (_)_ __ ___   __ _   ___ ___  _ __ ___
+  | |/ _` | | | |/ __| '_ \| | '_ ` _ \ / _` | / __/ _ \| '_ ` _ \
+  | | (_| | |_| | (__| | | | | | | | | | (_| || (_| (_) | | | | | |
+ _/ |\__,_|\__,_|\___|_| |_|_|_| |_| |_|\__,_(_)___\___/|_| |_| |_|
+|__/
+*/
+
+/* RESET */
+
+html, body, div, span, object,h1, h2, h3, h4, h5, h6, p, blockquote, pre, font,
+a, code, em, font, img, ins, kbd, q, s, samp, small,strong,dl, dt, dd, ol, ul, li,
+fieldset, form, label {
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	text-rendering: optimizeLegibility;
+	font-size: 20px;
+	font-weight: 300;
+	background-color: #fff;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+::selection {
+	background: #ea4c89;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: #ea4c89;
+	color: #fff;
+}
