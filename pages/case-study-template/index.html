@@ -1,0 +1,123 @@
+{% extends "base_CASESTUDY.html" %}
+
+{% block title %}Page title{% endblock title %}
+
+{% block intro %}Project name{% endblock intro %}
+
+{% block blurb %}Brief project description{% endblock blurb %}
+
+{% block overview %}
+An early stage start-up with a small R&ampD team, <a class="cs-link" href="http://www.useriq.com/" target="_blank">UserIQ</a> is a customer success platform offering CS/CX teams the ability to leverage analytical intelligence to understand users by allowing CS teams to create guided product tours, engagement campaigns and track user activity within a product.
+{% endblock overview %}
+
+{% block myrole %}I lead the research efforts while also teaching and mentoring the Jr. UX designer on my team about research methodologies and best practices.{% endblock myrole %}
+
+  {% block hero-image %}
+  <img class="spread" src="{% static 'images/hero-placeholder.png' %}" />
+  {% endblock hero-image %}
+
+{% block the-challenge %}
+UserIQ had previously targeted two primary user bases; Customer success teams &amp Product mangers. The company decided to focus in on customer success (CS) as the primary market that the product would cater towards. With this new target market in mind, the UX team was tasked with helping the business better understand the CS user base we currently had.
+</br>
+</br>
+Our primary research goals were:
+<ul class="case-study-list">
+  <li>Better understand customer success teams currently using the UserIQ product.</li>
+  <li>Identify notable behaviors, preferences, barriers and technologies that CS professionals use.</li>
+  <li>Identify any needs and/or opportunities to inform business strategy and product roadmap.</li>
+</ul>
+{% endblock the-challenge %}
+
+{% block the-approach %}
+Our general research approach was to start broad and then narrow in as we began to peel back the layers of understanding our users.
+</br>
+</br>
+We purposefully choose to focus on understanding our users from the perspective of their behavioral usage of the product rather than the traditional persona-based approach. The key reason for this was because although traditional personas have a place in product, given the size and scale of UserIQ, focusing on user behavior made the most sense as we looked to scale the product and shape business strategy.
+</br>
+</br>
+The research project was broken out into a few key phases:
+<ul class="case-study-list">
+  <li>In-app user surveys</li>
+  <li>Document internal tribal knowledge</li>
+  <li>On-site user interviews and ethnographies</li>
+  <li>Remote user interviews</li>
+  <li>UX data distillation</li>
+  <li>Affinity mapping of distilled data</li>
+</ul>
+
+{% endblock the-approach %}
+
+  {% block work-images %}
+    <figure>
+      <img class="double left" src="{% static 'images/placeholder.png' %}" />
+      <img class="double right" src="{% static 'images/placeholder.png' %}" />
+    </figure>
+
+  {% endblock work-images %}
+
+{% block additional-content %}
+
+<section class="full-width">
+  <div class="wrapper">
+    <div class="copy-block">
+      <h3>On-site customer interviews</h3>
+      <p class="body-copy">Before kicking-off on-site interviews with users, we began with in-product user surveys asking our users for very basic demographic information. Specifically we asked about job roles and titles as well as team size. These surveys were a great way to engage with a large sample size of our users and quickly get a general sense of basic demographic data.
+      </br>
+      </br>
+      With a base understanding of our users and their roles we then quickly moved to leverage local customers in order to shadow them.
+      </br>
+      </br>
+      We approached the on-sites with an ethnographic study in mind; observe and document what they do in their day-to-day.
+    </div>
+
+    <figure>
+      <img class="double left" src="{% static 'images/placeholder.png' %}" />
+      <img class="double right" src="{% static 'images/placeholder.png' %}" />
+    </figure>
+
+  </div><!--End wrapper-->
+</section>
+
+<section class="full-width grey">
+  <div class="wrapper">
+    <div class="copy-block">
+      <h3>Affinity mapping &amp; organizing data</h3>
+      <p class="body-copy">With both internal stakeholder and user on-site observation data in hand, we then began the task of making sense of all of this data.
+      </br>
+      </br>
+      We broke out all data into four categories – observations, assumptions, direct customer quotes, and miscellaneous. Each data point was placed on a color coded post-it note and thrown on a conference room wall.
+      </br>
+      </br>
+      With everything documented, we then begain affinity grouping all data into similar sub-groups.
+      </p>
+    </div>
+
+    <figure>
+      <img class="double left" src="{% static 'images/placeholder.png' %}" />
+      <img class="double right" src="{% static 'images/placeholder.png' %}" />
+    </figure>
+
+    <figure>
+      <img class="spread" src="{% static 'images/placeholder.png' %}" />
+    </figure>
+
+  </div><!--End wrapper-->
+</section>
+
+{% endblock additional-content %}
+
+{% block the-solution %}
+After much distillation we identified four primary user archetypes that the majority of our current user base fell into, we identified commonly used industry products, and identified level of expertise within the product.
+
+</br>
+</br>
+<strong>The Builder</strong>–Users who mostly use the product to create campaigns and then leave. <strong>The Guide</strong>–Slightly more involved than The Builders, these users create more strategic campaigns inside the product. <strong>The Detective</strong>–Users who like to dig deep into the data to understand usage. And finally <strong>The Synthesizer</strong>–Users who use all the learnings within the product to craft business strategy.
+{% endblock the-solution %}
+
+{% block final-image %}
+<img class="spread" src="{% static 'images/placeholder.png' %}" />
+{% endblock final-image %}
+
+{% block next-project %}
+<a href="/expapp" class="next-project"><strong>Next Case Study:</strong> ExpApp</a>
+{% endblock next-project%}
