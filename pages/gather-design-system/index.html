@@ -1,0 +1,134 @@
+{% extends "base_CASESTUDY.html" %}
+
+{% block title %}Gather{% endblock title %}
+
+{% block intro %}Gather Design System{% endblock intro %}
+
+{% block blurb %}Brief project description{% endblock blurb %}
+
+{% block overview %}
+<a class="cs-link" href="http://www.gatherhere.com/" target="_blank">Gather</a> is a SaaS event management platform serving the hospitality industry by offering both CRM-like functionality for event managers, tied with a consumer-facing marketplace to help drive new business leads.
+{% endblock overview %}
+
+{% block myrole %}As Director of UX, I layed the foundation for the design system while also working hand-in-hand with the other designer on my team to grow the system.{% endblock myrole %}
+
+  {% block hero-image %}
+  <img class="spread" src="{% static 'images/hero-placeholder.png' %}" />
+  {% endblock hero-image %}
+
+{% block the-challenge %}
+Having been founded in 2013, the tech stack for the product was starting to show it's age when it came to both scale and speed of development. The decision was made to re-write the product moving from Angular to React. This presented the UX team with an opportunity to also "re-write" the interaction patterns and look &amp; feel of Gather.
+</br>
+</br>
+Our primary UX goals were:
+<ul class="case-study-list">
+  <li>Refresh the UI to make the product feel more modern</li>
+  <li>Improve the user experience in all major "critial path" areas throughout the product</li>
+  <li>Create a scalable design system with guidlines for UI and UX patterns</li>
+</ul>
+{% endblock the-challenge %}
+
+{% block the-approach %}
+To begin this project I leaned heavily on my standard "Rapid Design Sprint" UX process – a hybrid approach combining elements from IDEO's Design Thinking and Google Venture's Design Sprint methodologies.
+</br>
+</br>
+My first step was to fully understand the state of the product by performing a complete UX audit. I began with meeting with my cross-functional partners in the Product, Sales and CX departments to understand current user painpoints as seen by each department. The Gather team was already using ProductBoard to help organize feedback, so this became a primary source of Voice of the Customer for me.
+</br>
+</br>
+Next, it was time to identify the key critical path areas in the product to use as starting points for a UX refresh. To better understand and map out the holistic product system I focused on creating three primary artifacts:
+<ul class="case-study-list">
+  <li>UX heuristic analysis</li>
+  <li>See | Do diagram</li>
+  <li>UI inventory</li>
+</ul>
+{% endblock the-approach %}
+
+  {% block work-images %}
+
+    <figure>
+      <img class="double left" src="{% static 'images/gather/gather-seedo.gif' %}" />
+      <img class="double right" src="{% static 'images/gather/gather-productboard.png' %}" />
+    </figure>
+
+    <figure>
+      <img class="spread" src="{% static 'images/gather/gather-audit1.png' %}" />
+    </figure>
+
+    <figure>
+      <img class="double left" src="{% static 'images/gather/gather-audit2.png' %}" />
+      <img class="double right" src="{% static 'images/gather/gather-audit3.png' %}" />
+    </figure>
+
+  {% endblock work-images %}
+
+{% block additional-content %}
+
+<section class="full-width">
+  <div class="wrapper">
+    <div class="copy-block">
+      <h3>Exploring the problem space</h3>
+      <p class="body-copy">With the initial discovery and understanding out of the way, the UX team then moved on to digging deep into exploring solutions to the main user problems we uncovered.
+      </br>
+      </br>
+      We held multiple Rapid Design Sprints over the course of two weeks. Each session focused on either a unique user or business problem. In order to have both the user-voice and business goals represented, we invited people from across all departments of the company these included; customer service, engineering, operations, marketing, product, sales, and the leadership team.
+      </br>
+      </br>
+      We then begain to wireframe and map out the IA for our new vision based on both the UX team's initial ideas as well as the ideas generated from the Rapid Deisgn Sprints.
+    </div>
+
+    <figure>
+      <img class="double left" src="{% static 'images/gather/gather-sprint1.png' %}" />
+      <img class="double right" src="{% static 'images/gather/gather-sprint3.png' %}" />
+    </figure>
+
+    <figure>
+      <img class="double left" src="{% static 'images/gather/gather-sprint2.png' %}" />
+      <img class="double right" src="{% static 'images/gather/gather-sprint4.png' %}" />
+    </figure>
+
+  </div><!--End wrapper-->
+</section>
+
+<section class="full-width grey">
+  <div class="wrapper">
+    <div class="copy-block">
+      <h3>Affinity mapping &amp; organizing data</h3>
+      <p class="body-copy">With both internal stakeholder and user on-site observation data in hand, we then began the task of making sense of all of this data.
+      </br>
+      </br>
+      We broke out all data into four categories – observations, assumptions, direct customer quotes, and miscellaneous. Each data point was placed on a color coded post-it note and thrown on a conference room wall.
+      </br>
+      </br>
+      With everything documented, we then begain affinity grouping all data into similar sub-groups.
+      </p>
+    </div>
+
+    <figure>
+      <img class="double left" src="{% static 'images/placeholder.png' %}" />
+      <img class="double right" src="{% static 'images/placeholder.png' %}" />
+    </figure>
+
+    <figure>
+      <img class="spread" src="{% static 'images/placeholder.png' %}" />
+    </figure>
+
+  </div><!--End wrapper-->
+</section>
+
+{% endblock additional-content %}
+
+{% block the-solution %}
+After much distillation we identified four primary user archetypes that the majority of our current user base fell into, we identified commonly used industry products, and identified level of expertise within the product.
+
+</br>
+</br>
+<strong>The Builder</strong>–Users who mostly use the product to create campaigns and then leave. <strong>The Guide</strong>–Slightly more involved than The Builders, these users create more strategic campaigns inside the product. <strong>The Detective</strong>–Users who like to dig deep into the data to understand usage. And finally <strong>The Synthesizer</strong>–Users who use all the learnings within the product to craft business strategy.
+{% endblock the-solution %}
+
+{% block final-image %}
+<img class="spread" src="{% static 'images/placeholder.png' %}" />
+{% endblock final-image %}
+
+{% block next-project %}
+<a href="/expapp" class="next-project"><strong>Next Case Study:</strong> ExpApp</a>
+{% endblock next-project%}
