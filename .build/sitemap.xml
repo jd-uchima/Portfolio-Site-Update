@@ -16,12 +16,27 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/case-study-template/index.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/about/index.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/gather-design-system/index.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/nfhs/index.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/personas/index.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>

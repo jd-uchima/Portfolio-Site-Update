@@ -13,17 +13,17 @@
   <meta name="keywords" content="jd uchima, j.d. uchima, portfolio, ux portfolio, ux director, director of ux, user experience, atlanta, UI, user interface, ui designer, user interface designer, visual designer, georgia, ga, designer, art director, freelance, webdesign, web design, web designer" />
   <meta name="description" content="Jd Uchima is an Atlanta based UX leader who enjoys clean UIs, sketching, woodworking, and skateboarding." />
 
-  <meta property="og:image" content="/static/images/uchima-bot@2x.png"/>
+  <meta property="og:image" content="./static/images/uchima-bot@2x.png"/>
 
   <meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
 
   <title>JD Uchima |  UX Leader </title>
 
-  <link rel="stylesheet" href="/static/css/jd.scss.css" />
-  <link rel="stylesheet" href="/static/css/foundation.css" />
-  <link rel="stylesheet" href="/static/css/twentytwenty.css" />
+  <link rel="stylesheet" href="./static/css/jd.scss.css" />
+  <link rel="stylesheet" href="./static/css/foundation.css" />
+  <link rel="stylesheet" href="./static/css/twentytwenty.css" />
 
-  <link rel="shortcut icon" href="/static/images/icon.ico" />
+  <link rel="shortcut icon" href="./static/images/icon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet" type="text/css">
 </head>
 
@@ -32,7 +32,7 @@
 <header>
   <nav>
     <div class="wrapper">
-      <a class="logo" href="/"><img class="uchimabot 2x" src="/static/images/uchima-bot.png" /><span>Jd Uchima</span></a>
+      <a class="logo" href="/"><img class="uchimabot 2x" src="./static/images/uchima-bot.png" /><span>Jd Uchima</span></a>
 
       <ul class="main-nav">
         <a href="/">Work</a>
@@ -44,7 +44,7 @@
   </nav>
 </header>
 
-	
+
 
 <section class="welcome full-width space-me">
   <div class="wrapper">
@@ -185,11 +185,10 @@ $.ajax({
 });
 </script>
 
-<script>
-$(function(){
-  $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-  $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
-});
+<script type="text/javascript">
+  $(function() {
+    $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5});
+  });
 </script>
 
 <script type="text/javascript">
