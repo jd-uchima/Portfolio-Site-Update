@@ -20,6 +20,9 @@
   <title>JD Uchima | Gather</title>
 
   <link rel="stylesheet" href="/static/css/jd.scss.css" />
+  <link rel="stylesheet" href="/static/css/foundation.css" />
+  <link rel="stylesheet" href="/static/css/twentytwenty.css" />
+
   <link rel="shortcut icon" href="/static/images/icon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet" type="text/css">
 </head>
@@ -71,7 +74,7 @@
 
   <figure>
     
-  <img class="spread" src="/static/images/hero-placeholder.png" />
+  <img class="spread" src="/static/images/gather/gather-footer.png" />
   
   </figure>
 
@@ -144,20 +147,20 @@ Next, it was time to identify the key critical path areas in the product to use 
       <p class="body-copy">With the initial discovery and understanding out of the way, the UX team then moved on to digging deep into exploring solutions to the main user problems we uncovered.
       </br>
       </br>
-      We held multiple Rapid Design Sprints over the course of two weeks. Each session focused on either a unique user or business problem. In order to have both the user-voice and business goals represented, we invited people from across all departments of the company these included; customer service, engineering, operations, marketing, product, sales, and the leadership team.
+      The UX team hosted multiple Rapid Design Sprints over the course of a few weeks. Each session focused on either a unique user or business problem. In order to have both the user-voice and business goals represented, we included and worked closely with various cross-functional teams. We also visited current customers on-site to observe how the Gather product fit into their day-to-day lives.
       </br>
       </br>
-      We then begain to wireframe and map out the IA for our new vision based on both the UX team's initial ideas as well as the ideas generated from the Rapid Deisgn Sprints.
+      With plenty of ideas to work from, the UX team then began to ideate possible improvements to the product. This phase of exploration was done via wireframes and rough prototypes.
     </div>
 
     <figure>
       <img class="double left" src="/static/images/gather/gather-sprint1.png" />
-      <img class="double right" src="/static/images/gather/gather-sprint3.png" />
+      <img class="double right" src="/static/images/gather/gather-sprint4.png" />
     </figure>
 
     <figure>
-      <img class="double left" src="/static/images/gather/gather-sprint2.png" />
-      <img class="double right" src="/static/images/gather/gather-sprint4.png" />
+      <img class="double left" src="/static/images/gather/gather-ia1.png" />
+      <img class="double right" src="/static/images/gather/gather-sprint3.png" />
     </figure>
 
   </div><!--End wrapper-->
@@ -166,24 +169,65 @@ Next, it was time to identify the key critical path areas in the product to use 
 <section class="full-width grey">
   <div class="wrapper">
     <div class="copy-block">
-      <h3>Affinity mapping &amp; organizing data</h3>
-      <p class="body-copy">With both internal stakeholder and user on-site observation data in hand, we then began the task of making sense of all of this data.
+      <h3>Validating with Users</h3>
+      <p class="body-copy">After the ideation phase we had a solid concept for the new direction of the product, that was based around reusable components and improved UX patterns. Since there were so many UX improvements we were tackling, a primary goal was to vet these new UX patterns and ideas with our users.
       </br>
       </br>
-      We broke out all data into four categories – observations, assumptions, direct customer quotes, and miscellaneous. Each data point was placed on a color coded post-it note and thrown on a conference room wall.
-      </br>
-      </br>
-      With everything documented, we then begain affinity grouping all data into similar sub-groups.
-      </p>
+      In order to help ease any concerns from the business around a potentially drastic product update, we also measured qualitative metrics based on success/failure of specific user tasks and mapped these to produce 95% confidence intervals for primary user tasks. We were able to specifically point to success around both completion rate for new bookings as well as error reduction when creating a new booking in the new system.
     </div>
 
     <figure>
-      <img class="double left" src="/static/images/placeholder.png" />
-      <img class="double right" src="/static/images/placeholder.png" />
+      <img class="double left" src="/static/images/gather/gather-uxr2.png" />
+      <img class="double right" src="/static/images/gather/gather-uxr1.png" />
     </figure>
 
     <figure>
-      <img class="spread" src="/static/images/placeholder.png" />
+      <img class="spread" src="/static/images/gather/gather-uxr3.png" />
+    </figure>
+
+  </div><!--End wrapper-->
+</section>
+
+<section class="full-width">
+  <div class="wrapper">
+    <div class="copy-block">
+      <h3>The design</h3>
+      <p class="body-copy">
+      The reimagined Gather product UI leads with a modern look &amp; feel while at the same time optimizing space and improving user flows. The best example of our new design system is the Booking Details screen. This screen includes many of the improved components and interaction patterns. See below for a before and after.
+      </br>
+      </br>
+    </div>
+
+      <div class="twentytwenty-container">
+        <img src="/static/images/gather/gather-UI-before.png" />
+        <img src="/static/images/gather/gather-UI-after.png" />
+      </div>
+
+  </div><!--End wrapper-->
+</section>
+
+<section class="full-width grey">
+  <div class="wrapper">
+    <div class="copy-block">
+      <h3>Building Components</h3>
+      <p class="body-copy">
+      Typically at this point is where you would expect to see buzz words like atoms, molecules, organisms, etc.
+      </br>
+      </br>
+      <strong>Soapbox time:</strong> Although the ideas that Brad Frost outlined in "Atomic Design" are great, he himself says that Atomic Design is simply a mental model for approaching a design system. It's practically impossible to create a fully coherent design system when starting with atoms first. In reality what you end up with are a series of disjointed experiences that make the system harder to maintain.
+      </br>
+      </br>
+      Instead of trying to start with atoms or molecules, we built the design system organically. We would create flows and screens holistically and then break those down into smaller reusable components (atoms), which we then documented.
+    </div>
+
+    <figure>
+      <img class="double left" src="/static/images/gather/gather-dsm2.png" />
+      <img class="double right" src="/static/images/gather/gather-dsm3.png" />
+    </figure>
+
+    <figure>
+      <img class="double left" src="/static/images/gather/gather-dsm4.png" />
+      <img class="double right" src="/static/images/gather/gather-dsm5.png" />
     </figure>
 
   </div><!--End wrapper-->
@@ -196,18 +240,17 @@ Next, it was time to identify the key critical path areas in the product to use 
       <div class="copy-block">
         <h3>The Solution</h3>
         <p class="body-copy">
-After much distillation we identified four primary user archetypes that the majority of our current user base fell into, we identified commonly used industry products, and identified level of expertise within the product.
-
+Throughout the entire process of building out the design system, the UX team worked closely with our front-end developers to ensure that this design system wasn't just a series of Sketch symbols. With every new component created and documented, there was a process in place for adding that new component to our dev team's StoryBook instance. The final design system encompassed both tactical Sketch libraries and symbols as well as usable React code.
 </br>
 </br>
-<strong>The Builder</strong>–Users who mostly use the product to create campaigns and then leave. <strong>The Guide</strong>–Slightly more involved than The Builders, these users create more strategic campaigns inside the product. <strong>The Detective</strong>–Users who like to dig deep into the data to understand usage. And finally <strong>The Synthesizer</strong>–Users who use all the learnings within the product to craft business strategy.
+<strong>Lessons learned:</strong> As much as we tried to document new patterns in real-time, it become more and more difficult to build in "documentation writing" into our sprint process. With a team moving quickly, documentation became an afterthought sometimes. Building in this writing time into our sprint would have helped avoid going back and writing rules retroactivley.
 </p>
       </div>
     </div><!--End wrapper-->
 
     <figure>
       
-<img class="spread" src="/static/images/placeholder.png" />
+<img class="spread" src="/static/images/gather/gather-footer.png" />
 
     </figure>
 
@@ -250,9 +293,11 @@ After much distillation we identified four primary user archetypes that the majo
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script src="/static/js/main.js"></script>
+<script src="/static/js/jquery.event.move.js"></script>
+<script src="/static/js/jquery.twentytwenty.js"></script>
 
 <script type="text/javascript">
 // Set the Access Token
@@ -275,6 +320,13 @@ $.ajax({
         $('#dribbbleShots').append('<p>Sorry, No shots yet</p>');
       }
     }
+});
+</script>
+
+<script>
+$(function(){
+  $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+  $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
 });
 </script>
 
